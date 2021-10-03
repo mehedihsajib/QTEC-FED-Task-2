@@ -113,6 +113,7 @@
 .sidebar-content .top-content {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .sidebar-content .top-content .hamburger {
@@ -123,7 +124,7 @@
 /* Sidebar Items */
 
 .sidebar-items .sidebar-item:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 7px;
 }
 
 .sidebar-items .item-link {
@@ -404,7 +405,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     border-bottom: 1px solid #dbdbdb;
 }
 
