@@ -50,9 +50,16 @@ html {
 }
 
 /* 992px */
-@media (max-width: 62em) {
+@media only screen and (max-width: 62em) {
     .container {
         padding: 0 2rem;
+    }
+}
+
+/*  Media queries for 400px */
+@media only screen and (max-width: 25em) {
+    .container {
+        padding: 0 1rem;
     }
 }
 

@@ -95,11 +95,16 @@
 
 /* ========== SIDEBAR  ==========*/
 .content-wrapper {
-    display: grid;
-    grid-template-columns: 32rem auto;
+    display: flex;
     padding-bottom: 10rem;
 }
+
+.main-content {
+    width: 100%;
+}
+
 .sidebar-wrapper {
+    width: 43rem;
     padding: 2rem;
     background: #ffffff;
     box-shadow: var(--box-shadow-right);
@@ -464,6 +469,14 @@
     font-size: 1.8re;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 /* =================== MEDIA QUERIES =================== */
 /* Media queries for 992px */
 @media only screen and (max-width: 62em) {
@@ -532,11 +545,46 @@
 
 /* Media queries for 660px */
 @media only screen and (max-width: 41.25em) {
-    .sidebar-wrapper {
-        display: none;
+    .content-wrapper {
+        flex-direction: column;
     }
 
-    .content-wrapper {
-        grid-template-columns: 1fr;
+    .sidebar-wrapper {
+        width: 100%;
+    }
+
+    .sidebar-wrapper {
+        padding-bottom: 0;
+    }
+
+    .top-nav {
+        flex-direction: column;
+    }
+
+    .top-nav-left {
+        flex-direction: column;
+    }
+
+    .top-nav-left .text p {
+        margin-right: 1.2rem;
+    }
+
+    .top-nav-left .text {
+        margin-bottom: 1rem;
+    }
+}
+
+/*  Media queries for 400px */
+@media only screen and (max-width: 25em) {
+    .checkout-wrapper {
+        padding: 1rem;
+    }
+
+    .cart-wrapper .offer-code {
+        margin-top: 5rem;
+    }
+
+    .checkout-wrapper .box-body .btn-primary {
+        margin-top: 3rem;
     }
 }
