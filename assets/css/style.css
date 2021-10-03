@@ -512,10 +512,12 @@
 
     .checkout-wrapper {
         width: 100%;
+        margin-top: 2rem;
     }
 
     .cart-wrapper {
         width: 100%;
+        margin-top: 5rem;
     }
 
     .header-bottom {
@@ -552,10 +554,11 @@
 
     .sidebar-wrapper {
         width: 100%;
+        margin-bottom: 2rem;
     }
 
     .sidebar-wrapper {
-        padding-bottom: 0;
+        padding-bottom: 2rem;
     }
 
     .top-nav {
